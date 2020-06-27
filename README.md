@@ -1,3 +1,5 @@
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/mlsl-multi-level-self-supervised-learning-for/synthetic-to-real-translation-on-gtav-to)](https://paperswithcode.com/sota/synthetic-to-real-translation-on-gtav-to?p=mlsl-multi-level-self-supervised-learning-for)
 # MLSL: Multi-Level Self-Supervised Learning for Domain Adaptation with Spatially Independent and Semantically Consistent Labeling(WACV2020)
 
 An [MXNet](https://mxnet.apache.org/) implementation of MLSL is comming soon.
