@@ -8,14 +8,15 @@ An [MXNet](https://mxnet.apache.org/) implementation of MLSL is comming soon.
 A leaderboard for state-of-the-art methods is available [here](https://github.com/engrjavediqbal/udass-leaderboard). Feel free to contact  for adding your published results.
 
 ### Citation:
-If you found this useful, please cite our [paper](https://arxiv.org/abs/1909.13776). 
+If you found this useful, please cite our [paper](https://openaccess.thecvf.com/content_WACV_2020/papers/Iqbal_MLSL_Multi-Level_Self-Supervised_Learning_for_Domain_Adaptation_with_Spatially_Independent_WACV_2020_paper.pdf). 
 
->@article{iqbal2019mlsl,  
+>@inproceedings{iqbal2020mlsl,  
 >&nbsp; &nbsp; &nbsp;    title={MLSL: Multi-Level Self-Supervised Learning for Domain Adaptation with Spatially Independent and  
 >&nbsp; &nbsp; &nbsp;     Semantically Consistent Labeling},  
 >&nbsp; &nbsp; &nbsp;     author={Javed Iqbal and Mohsen Ali},  
->&nbsp; &nbsp; &nbsp;     journal={arXiv preprint arXiv:1909.13776},  
->&nbsp; &nbsp; &nbsp;     year={2019}  
+>&nbsp; &nbsp; &nbsp;     booktitle={The IEEE Winter Conference on Applications of Computer Vision}, 
+>&nbsp; &nbsp; &nbsp;     pages={1864--1873}, 
+>&nbsp; &nbsp; &nbsp;     year={2020} 
 >}
 
 
