@@ -32,7 +32,7 @@ We assume you are working in mlsl-master folder.
 - Download [Cityscapes](https://www.cityscapes-dataset.com/).
 - Put downloaded data in "data" folder.
 1. Source pretrained models:
-- Download [source model](https://www.dropbox.com/s/idnnk398hf6u3x9/gta_rna-a1_cls19_s8_ep-0000.params?dl=0) trained in GTA-5.
+- Download [source model](https://drive.google.com/file/d/19QEVSdCTS4KwSyPLbquqQ5bgRi5OGME0/view?usp=sharing) trained in GTA-5.
 - For ImageNet pre-traine model, download [model in dropbox](https://www.dropbox.com/s/n2eewzy7bn7lhk0/ilsvrc-cls_rna-a1_cls1000_ep-0001.params?dl=0), provided by [official ResNet-38 repository](https://github.com/itijyou/ademxapp).
 - Put source trained and ImageNet pre-trained models in "models/" folder
 2. Spatial priors 
