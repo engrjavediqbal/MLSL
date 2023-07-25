@@ -17,7 +17,7 @@ By Javed Iqbal and Mohsen Ali
 0. [Citation](#citation)
 
 ### Introduction
-This repository contains the multi-level self-supervised learning framwork for domain adaptation of semantic segmnentation based on the work described in WACV 2020 paper "[MLSL: Multi-Level Self-Supervised Learning for Domain Adaptation with Spatially Independent and Semantically Consistent Labeling]". 
+This repository contains the multi-level self-supervised learning framework for domain adaptation of semantic segmentation based on the work described in the WACV 2020 paper "[MLSL: Multi-Level Self-Supervised Learning for Domain Adaptation with Spatially Independent and Semantically Consistent Labeling]". 
 (https://arxiv.org/pdf/1909.13776.pdf).
 
 ### Requirements:
@@ -59,12 +59,12 @@ python issegm1/solve_AO.py --num-round 6 --test-scales 2048 --scale-rate-range 0
 - To run the code, you need to set the data paths of source data (data-root) and target data (data-root-tgt) by yourself. Besides that, you can keep other argument setting as default.
 
 4. Evaluation
-- Test in Cityscapes for model compatible with GTA-5 (Initial source trained model as example)
+- Test in Cityscapes for model compatible with GTA-5 (Initial source trained model as an example)
 ~~~~
 python issegm/evaluate.py --data-root DATA_ROOT_CITYSCAPES --output val/gta-city --dataset cityscapes --phase val --weights models/gta_rna-a1_cls19_s8_ep-0000.params --split val --test-scales 2048 --test-flipping --gpus 0 --no-cudnn
 ~~~~
 
-5. Train in source domain
+5. Train in the source domain
 - Train in GTA-5
 ~~~~
 python issegm/train_src.py --gpus 0,1,2,3 --split train --data-root DATA_ROOT_GTA --output gta_train --model gta_rna-a1_cls19_s8 --batch-images 16 --crop-size 500 --scale-rate-range 0.7,1.3 --weights models/ilsvrc-cls_rna-a1_cls1000_ep-0001.params --lr-type fixed --base-lr 0.0016 --to-epoch 30 --kvstore local --prefetch-threads 16 --prefetcher process --cache-images 0 --backward-do-mirror --origin-size 1914
@@ -74,7 +74,8 @@ python issegm/train_src.py --gpus 0,1,2,3 --split train --data-root DATA_ROOT_GT
 
 ### Note
 - This code is based on [CBST](https://github.com/yzou2/CBST).
-- Due to the randomness, the self-training results may slightly vary in each run. Usually the best results will be obtained in 3rd/4th round. For training in source domain, the best model usually appears during the first 30 epoches. Optimal model appearing in initial stage is also possible.
+- Due to the randomness, the self-training based domain adaptation results may slightly vary in each run.
+- For training in the source domain, the best model usually appears during the first 30 epochs, however, an optimal model can be obtained with less/more number of epochs. 
 
 
 
@@ -84,7 +85,7 @@ python issegm/train_src.py --gpus 0,1,2,3 --split train --data-root DATA_ROOT_GT
 
 
 ### Results
-A leaderboard for state-of-the-art methods is available [here](https://github.com/engrjavediqbal/udass-leaderboard). Feel free to contact  for adding your published results.
+A leaderboard for state-of-the-art methods is available [here](https://github.com/engrjavediqbal/udass-leaderboard). Feel free to contact us for adding your published results.
 
 ### Citation:
 If you found this useful, please cite our [paper](https://openaccess.thecvf.com/content_WACV_2020/papers/Iqbal_MLSL_Multi-Level_Self-Supervised_Learning_for_Domain_Adaptation_with_Spatially_Independent_WACV_2020_paper.pdf). 
